@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JavaScript</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Algorítmos</h1>
+        <h2>Exercícios Propostos por <a href="https://github.com/gustavoguanabara" target="_blank" rel="external"><em>Gustavo Guanabara</em></a></h2>
+    </header>
+    <main>
+        <section>
+            <h1>Eexercício 001</h1>
+            <p>1) Escreva um programa que mostre na tela a mensagem "Olá, Mundo!"
+            </p>
+            <p>Olá, Mundo!</p>
+        </section>
+        <section>
+            <h1>Exercício 002</h1>
+                <p>2) Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas vindas para ela:
+                </p>
+                <p>Qual o seu nome? <input type="text" name="txtnome" id="txtnome"></p>
+                <div id="res_dois">
+                    <input type="button" value="Carregar" onclick="ex002()">
+                </div>
+        </section>
+        <section>
+            <div>
+                <h1>Exercício 003</h1>
+                <p>3) Crie um programa que leia o nome e o salário de um funcionário:</p>
+               <p>Nome do Funcionário:<input type="text" name="txtnome" id="txtnome"></p>
+               <p>Salário: <input type="number" name="sal" id="sal"></p>
+            </div>
+            <div id="res_tres">
+                 <input type="button" value="Carregar" onclick="ex003()">
+            </div>
+        </section>
+        <section>
+            <h1>Exercício 004</h1>
+            <p>4) Desenvolva um algoritmo que leia dois números inteiros e mostre o somatório
+            entre eles.</p>
+            <p>
+                <input type="number" name="txtn1" id="txtn1"> +
+                <input type="number" name="txtn2" id="txtn2">
+                <input type="button" value="Somar" onclick="ex004()">
+            </p>
+            <div id="res_quatro"></div>
+        </section>
+        <section>
+            <h1>Exercício 005</h1>
+            <p>
+                5) Faça um programa que leia as duas notas de um aluno em uma matéria e mostre
+                    na tela a sua média na disciplina.
+            </p>
+            <p>Digite a primeira nota:</p>
+            <input type="number" name="v1" id="v1">
+            <p>Digite a segunda nota:</p>
+            <input type="number" name="v2" id="v2">
+            <input type="button" value="Calcular" onclick="ex005()">
+            <div id="res_cinco">Média das notas</div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
