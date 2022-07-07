@@ -169,3 +169,49 @@ function ex016() {
     var res = document.getElementById('res_dezesseis')
     res.innerHTML = `Fumando <strong>${cigarros} cigarros</strong> por dia durante <strong>${anos} anos</strong> você perdeu <strong>${totvidadia.toFixed(0)} dias do total da sua vida</strong> (<em>Supondo que sua expectativa de vida seja de 100 anos</em>).`
 }
+
+function ex017() {
+    var vel = document.getElementById('vel')
+    var velocidade = vel.value 
+    var res = document.getElementById('res_dezessete')
+    var multa = (velocidade - 80) * 5
+    if (velocidade > 80) {
+        res.innerHTML = `Você esta acima do limite de velocidade, você foi multado no valor de <strong>R$${multa.toFixed(2).replace('.',',')} reais.</strong>`
+    } else {
+        res.innerHTML = `Você esta dentro da velocidade permitida, siga com segurança!`
+    }
+}
+
+function ex018() {
+    var res = document.getElementById('res_dezoito')
+    var nasc = document.getElementById('nasc')
+    var nascimento = nasc.value
+    var idade = 2022 - nascimento
+    if (nascimento <= 0 || nascimento < 1900 || nascimento == 2023) {
+        res.innerHTML = `[ERRO] Digite a data novamente`
+    } else if (idade < 16) {
+        res.innerHTML = `Você tem ${idade} anos, portanto você não pode votar`
+    } else if (idade >= 16 && idade < 18) {
+        res.innerHTML = `Você tem ${idade} anos, portanto você pode votar mas o voto não é obrigatório`
+    } else if (idade >= 18 && idade < 65) {
+        res.innerHTML = `Você tem ${idade} anos, portanto o voto é obrigatório.`
+    } else {
+        res.innerHTML = `Você tem ${idade} anos, portanto o voto não é mais obrigatório`
+    }
+}
+
+function ex019() {
+    var n1 = document.getElementById('nota1')
+    var n2 = document.getElementById('nota2')
+    var res = document.getElementById('res_dezenove')
+    var nota1 = Number(n1.value)
+    var nota2 = Number(n2.value)
+    var media = (nota1 + nota2)/2
+    if (media < 7) {
+    res.innerHTML = `A média do aluno é ${media.toFixed(1)}, o aluno não teve um bom aproveitamento (ABAIXO DA MÉDIA)`
+    }  else if (media === 7) {
+    res.innerHTML = `A média do aluno é ${media.toFixed(1)}, o aluno teve um bom aproveitamento (ESTÀ NA MÉDIA).`
+    } else {
+        res.innerHTML = `A média do aluno é ${media.toFixed(1)}, o aluno teve um bom aproveitamento (ESTÀ ACIMA DA MÉDIA).`
+    }
+}
