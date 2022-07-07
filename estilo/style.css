@@ -80,12 +80,12 @@ div#res_oito {
 
 nav {
     text-align: center;
+    color: white;
 }
 
 nav a {
     text-align: center;
-    color: black;
-    margin: 5px;
+    color: white;
 }
 
 nav a:hover {
