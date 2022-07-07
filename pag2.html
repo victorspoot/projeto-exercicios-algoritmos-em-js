@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JavaScript</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Algorítmos</h1>
+        <h2>Exercícios Propostos por <a href="https://github.com/gustavoguanabara" target="_blank" rel="external"><em>Gustavo Guanabara</em></a></h2>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1>Exercício 011</h1>
+                <p>11) Desenvolva uma lógica que leia os valores de A, B e C de uma equação do segundo grau e mostre o valor de Delta.</p>
+                <p>A = <input type="number" name="a" id="a"></p>
+                <p>B = <input type="number" name="b" id="b"></p> 
+                <p>C = <input type="number" name="c" id="c"> <input type="button" value="VALOR DE DELTA" onclick="ex011()"></p>
+            </div>
+            <div id="res_onze"></div>
+        </section>
+        <section>
+            <div>
+                <h1>Exercício 012</h1>
+                <P>12) Crie um programa que leia o preço de um produto, calcule e mostre o seu PREÇO PROMOCIONAL, com 5% de desconto.</P>
+                <p>Valor do produto <input type="number" name="valor" id="valor"></p> 
+                <p>Digite o desconto <input type="number" name="desc" id="desc"> <input type="button" value="DESCONTAR" onclick="ex012()"></p>
+            </div>
+             <div id="res_doze"></div>
+        </section>
+        <section>
+            <div>
+                <h1>Exercício 013</h1>
+                <p>13) Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o seu novo salário, com 15% de aumento.</p>
+                <p>Digite seu salário atual:</p>
+                <p><input type="number" name="salario" id="salario"></p>
+                <p>Digite a porcentagem do aumento:</p>
+                <p><input type="number" name="porcentagem" id="porcentagem"> <input type="button" value="AUMENTO" onclick="ex013()"></p>
+            </div>
+            <div id="res_treze"></div>
+        </section>
+        <section>
+            <div>
+                <h1>Execício 014</h1>
+                <p>14) A locadora de carros precisa da sua ajuda para cobrar seus serviços. Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço total a pagar,
+                sabendo que o carro custa R$90 por dia e R$0,20 por Km rodado.</p>
+                <p>Quantos km foram percorridos?</p>
+                <p><input type="number" name="kmp" id="kmp"></p>
+                <p>Quantos dias de locação?</p> 
+                <p><input type="number" name="dias" id="dias"> <input type="button" value="CALCULAR" onclick="ex014()"></p>
+            </div>
+            <div id="res_quatorze"></div>
+        </section>
+        <section>
+            <div>
+                <h1>Exercício 015</h1>
+                <p>15) Crie um programa que leia o número de dias trabalhados em um mês e mostre o salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25 por hora trabalhada.</p>
+                <p>Dias trabalhados <input type="number" name="diast" id="diast"> <input type="button" value="CALCULAR" onclick="ex015()"></p>
+            </div>
+            <div id="res_quinze"></div>
+        </section>
+        <section>
+            <div>
+                <h1>Exercício 016</h1>
+                <p>16) [DESAFIO] Escreva um programa para calcular a redução do tempo de vida de um fumante. Pergunte a quantidade de cigarros fumados por dias e quantos anos ele já fumou. Considere que um fumante perde 10 min de vida a cada cigarro. Calcule quantos dias de vida um fumante perderá e exiba o total em dias.</p>
+                <p>Quantos cigarros fuma por dia?</p> 
+                <p><input type="number" name="cig" id="cig"></p>
+                <p>Fuma a quantos anos?</p>
+                <p><input type="number" name="ano'" id="ano"> <input type="button" value="SUBTRAIR VIDA" onclick="ex016()"></p>
+            </div>
+            <div id="res_dezesseis">
+    
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
