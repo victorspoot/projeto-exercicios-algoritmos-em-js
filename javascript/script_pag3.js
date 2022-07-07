@@ -157,7 +157,7 @@ function ex030() {
         res.innerHTML = `[ERRO] As medidas não podem formar um triângulo!`
     } else if (lado3 >= lado1 + lado2) {
         res.innerHTML = `[ERRO] As medidas não podem formar um triângulo!`
-    } else {
-        res.innerHTML = `<strong>As medidas formam um triângulo!</strong>`
+    } else if (lado1 == lado2 && lado1 == lado3 && lado2 == lado3) {
+        res.innerHTML = `O triângulo é equilátero`
     }
 }
