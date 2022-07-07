@@ -6,14 +6,13 @@ function ex002() {
 }
 
 function ex003() {
-    var n = document.getElementById('txtnome')
-    var salario = document.getElementById('sal')
-    var res = document.getElementById('res_tres')
-    var nome = n.value
-    var sal = salario.value
-    res.innerHTML = `Nome do funcionario: ${nome}</br>`
-    res.innerHTML += `Salário: R$${sal} reais</br>`
-    res.innerHTML += `O funcionário ${nome} tem um salário de R$${sal} reais.`
+    let res = document.getElementById('res_tres')
+    let nome = document.getElementById('nome')
+    let salario = document.getElementById('salario')
+    let n = nome.value 
+    let sal = Number(salario.value)
+    res.innerHTML = `Nome do funcionário: <strong>${n}</strong>.<br>`
+    res.innerHTML += `Salário do funcionario: <strong>R$${sal.toFixed(2).replace('.', ',')} reais</strong>.`
 }
 
 function ex004() {

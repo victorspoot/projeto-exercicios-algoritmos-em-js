@@ -51,6 +51,7 @@ a:hover {
 main {
     max-width: 1000px;
     margin: auto;
+    border: 1px solid black;
 }
 
 section {
