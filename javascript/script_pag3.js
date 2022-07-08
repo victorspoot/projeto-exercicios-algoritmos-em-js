@@ -34,8 +34,8 @@ function ex023() {
     var nome = n.value
     var valor = Number(v.value)
     var desconto5 = 5 / 100
-    var desconto15 = 15 / 100
-    var descontof = (- valor * desconto15) + valor
+    var desconto13 = 13 / 100
+    var descontof = (- valor * desconto13) + valor
     var descontom = (- valor * desconto5) + valor
     if (sex[0].checked) {
         res.innerHTML = `Olá ${nome}, o valor do seu produto com 5% de desconto é de R$${descontom.toFixed(2).replace('.',',')} reais.`
