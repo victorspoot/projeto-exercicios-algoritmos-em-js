@@ -40,7 +40,7 @@ function ex023() {
     if (sex[0].checked) {
         res.innerHTML = `Olá ${nome}, o valor do seu produto com 5% de desconto é de R$${descontom.toFixed(2).replace('.',',')} reais.`
     } else if (sex[1].checked) {
-        res.innerHTML = `Olá ${nome}, o valor do seu produto com 15% de desconto é de R$${descontof.toFixed(2).replace('.',',')} reais`
+        res.innerHTML = `Olá ${nome}, o valor do seu produto com 13% de desconto é de R$${descontof.toFixed(2).replace('.',',')} reais`
     }  
 }
 
