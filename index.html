@@ -23,7 +23,7 @@
             <h1>Exercício 002</h1>
                 <p>2) Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas vindas para ela:
                 </p>
-                <p>Qual o seu nome? <input type="text" name="txtnome" id="txtnome"> <input type="button" value="CARREGAR" onclick="ex002()"></p>
+                <p><label for="txtnome">Qual o seu nome?</label> <input type="text" name="txtnome" id="txtnome"> <input type="button" value="CARREGAR" onclick="ex002()"></p>
                 <div id="res_dois">
                     
                 </div>
@@ -32,8 +32,8 @@
             <div>
                 <h1>Exercício 003</h1>
                 <p>3) Crie um programa que leia o nome e o salário de um funcionário:</p>
-               <p>Nome do Funcionário: <input type="text" name="nome" id="nome"></p>
-               <p>Salário: <input type="number" name="sal" id="salario"> <input type="button" value="CARREGAR" onclick="ex003()"></p>
+               <p><label for="nome">Nome do Funcionário:</label> <input type="text" name="nome" id="nome"></p>
+               <p><label for="salario">Salário:</label> <input type="number" name="sal" id="salario"> <input type="button" value="CARREGAR" onclick="ex003()"></p>
             </div>
             <div id="res_tres">
                 
@@ -44,7 +44,7 @@
             <p>4) Desenvolva um algoritmo que leia dois números inteiros e mostre o somatório
             entre eles.</p>
             <p>
-                <input type="number" name="txtn1" id="txtn1"> +
+                <label for="txtn2"><input type="number" name="txtn1" id="txtn1"></label> +
                 <input type="number" name="txtn2" id="txtn2">
                 <input type="button" value="SOMAR" onclick="ex004()">
             </p>
@@ -54,9 +54,9 @@
             <h1>Exercício 005</h1>
             <p>5) Faça um programa que leia as duas notas de um aluno em uma matéria e mostre na tela a sua média na disciplina.
             </p>
-            <p>Digite a primeira nota:</p>
+            <p><label for="v1">Digite a primeira nota:</label></p>
             <input type="number" name="v1" id="v1">
-            <p>Digite a segunda nota:</p>
+            <p><label for="v2">Digite a segunda nota:</label></p>
             <input type="number" name="v2" id="v2">
             <input type="button" value="MÉDIA" onclick="ex005()">
             <p><div id="res_cinco">Média das notas</div></p>
@@ -65,7 +65,7 @@
             <div>
                 <h1>Exercício 006</h1>
                 <p>6) Faça um programa que leia um número inteiro e mostre o seu antecessor e seu sucessor.</p>
-                <p>Digite um número <input type="number" name="nume" id="nume">: <input type="button" value="CALCULAR" onclick="ex006()"></p>
+                <p><label for="nume">Digite um número:</label> <input type="number" name="nume" id="nume">: <input type="button" value="CALCULAR" onclick="ex006()"></p>
             </div>
             <div id="res_seis"></div>
         </section>
@@ -73,7 +73,7 @@
             <div>
                 <h1>Exercício 007</h1>
                 <p>7) Crie um algoritmo que leia um número real e mostre na tela o seu dobro e a sua terça parte.</p>
-                <p>Digite um valor para saber seu <strong>DOBRO</strong> e a sua <strong>TERÇA PARTE</strong> <input type="number" name="valor" id="valor">: <input type="button" value="CALCULAR" onclick="ex007()"></p> 
+                <p><label for="valor">Digite um valor para saber seu <strong>DOBRO</strong> e a sua <strong>TERÇA PARTE</strong></label>: <input type="number" name="valor" id="valor">: <input type="button" value="CALCULAR" onclick="ex007()"></p> 
             </div>
             <div id="res_sete">
             </div>
@@ -82,7 +82,7 @@
             <div>
                 <h1>Exercício 008</h1>
                 <p>8) Desenvolva um programa que leia uma distância em metros e mostre os valores relativos em outras medidas.</p>
-                <p id="ex_oito">Digite a distância em <strong>METROS</strong> <input type="number" name="dist" id="dist">
+                <p id="ex_oito"><label for="dist">Digite a distância em <strong>METROS</strong></label> <input type="number" name="dist" id="dist">
                     <input type="button" value="VALORES RELATIVOS" onclick="ex008()"></p>
             </div>
             <p>
@@ -95,7 +95,7 @@
             <p class="cor_font">Máquina de comprar Dólar</p>
             <p>US$1,00 Dolar = R$3,45 Reais</p>
             <div>
-                Digite quanto dinheiro tem na carteira: <input type="number" name="din" id="din"> <input type="button" value="CONVERTER" onclick="ex009()">
+                <label for="din">Digite quanto dinheiro tem na carteira:</label> <input type="number" name="din" id="din"> <input type="button" value="CONVERTER" onclick="ex009()">
             </div>
             <div id="res_nove"></div>
         </section>
@@ -103,9 +103,9 @@
             <div>
                 <h1>Exercício 010</h1>
                 <p>10) Faça um algoritmo que leia a largura e altura de uma parede, calcule e mostre a área a ser pintada e a quantidade de tinta necessária para o serviço, sabendo que cada litro de tinta pinta uma área de 2metros quadrados.</p>
-                <p>Digite a largura da parede em metros:</p>
+                <p><label for="largura">Digite a largura da parede em metros:</label></p>
                 <p><input type="number" name="largura" id="largura"></p>
-                <p>Digite a altura da parede em metros:<p> 
+                <p><label for="altura">Digite a altura da parede em metros:</label><p> 
                 <p><input type="number" name="altura" id="altura"> <input type="button" value="CALCULAR" onclick="ex010()"></p>
             </div>
             <div id="res_dez"></div>

@@ -18,7 +18,7 @@
                 <h1>Exercício 021</h1>
                 <p>21) Faça um algoritmo que leia um determinado ano e mostre se ele é ou não BISSEXTO.
                 </p>
-                <p>Digite o ano para saber se é BISSEXTO <input type="number" name="bi" id="bi"> <input type="button" value="CALCULAR" onclick="ex021()">
+                <p><label for="bi">Digite o ano para saber se é BISSEXTO:</label> <input type="number" name="bi" id="bi"> <input type="button" value="CALCULAR" onclick="ex021()">
                 </p>
             </div>
             <div id="res_vinte_um"></div>
@@ -30,7 +30,7 @@
                 <br>- Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do alistamento.
                 </p>
                 <p>
-                    Ano de nascimento <input type="number" name="ano" id="ano">
+                    <label for="ano">Ano de nascimento:</label> <input type="number" name="ano" id="ano">
                     <input type="button" value="CALCULAR" onclick="ex022()">
                 </p>
             </div>
@@ -42,14 +42,14 @@
                 <p>23) Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos para todos, mas especialmente para mulheres. Faça um programa que leia nome, sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo que:
                     <br> - Homens ganham 5% de desconto
                     <br> - Mulheres ganham 13% de desconto</p>
-               <p>Nome <input type="text" name="nome" id="nome"></p> 
-                <p>Sexo:
+               <p><label for="nome">Nome:</label> <input type="text" name="nome" id="nome"></p> 
+                <p><label for="radsex">Sexo:</label>
                     <input type="radio" name="radsex" id="masc">
                     <label for="masc">Masculino</label>
                     <input type="radio" name="radsex" id="fem">
                     <label for="fem">Feminino</label>
                 </p> 
-                <p>Valor das compras <input type="number" name="valor" id="valor"> <input type="button" value="DESCONTO" onclick="ex023()"></p> 
+                <p><label for="valor">Valor das compras:</label> <input type="number" name="valor" id="valor"> <input type="button" value="DESCONTO" onclick="ex023()"></p> 
             </div>
             <div id="res_vinte_tres"></div>
         </section>
@@ -57,7 +57,7 @@
             <div>
                 <h1>Exercício 024</h1>
                 <p>24) Faça um algoritmo que pergunte a distância que um passageiro deseja percorrer em Km. Calcule o preço da passagem, cobrando R$0.50 por Km para viagens até 200Km e R$0.45 para viagens mais longas.</p>
-                <p>Qual distâcia que deseja percorrer em km? <input type="number" name="dist" id="dist"> <input type="button" value="CALCULAR" onclick="ex024()"></p>
+                <p><label for="dist">Qual distâcia que deseja percorrer em km?</label> <input type="number" name="dist" id="dist"> <input type="button" value="CALCULAR" onclick="ex024()"></p>
             </div>
             <div id="res_vinte_quatro"></div>
         </section>
@@ -65,9 +65,9 @@
             <div>
                 <h1>Exercício 025</h1>
                 <p>25) [DESAFIO] Crie um programa que leia o tamanho de três segmentos de reta. Analise seus comprimentos e diga se é possível formar um triângulo com essas retas. Matematicamente, para três segmentos formarem um triângulo, o comprimento de cada lado deve ser menor que a soma dos outros dois.</p>
-                <p>Digite o tamanho da primeira reta: <input type="number" name="reta1" id="reta1"></p>
-                <p>Digite o tamanho da segunda reta: <input type="number" name="reta2" id="reta2"> </p>
-                <p>Digite o tamanho da terceira reta: <input type="number" name="reta3" id="reta3"> <input id="bot" type="button" value="CALCULAR" onclick="ex025()"></p>
+                <p><label for="reta1">Digite o tamanho da primeira reta:</label> <input type="number" name="reta1" id="reta1"></p>
+                <p><label for="reta2">Digite o tamanho da segunda reta:</label> <input type="number" name="reta2" id="reta2"> </p>
+                <p><label for="reta3">Digite o tamanho da terceira reta:</label> <input type="number" name="reta3" id="reta3"> <input id="bot" type="button" value="CALCULAR" onclick="ex025()"></p>
             </div>
             <div id="res_vinte_cinco"></div>
         </section>
@@ -79,8 +79,8 @@
                     <br> - O segundo valor é o maior
                     <br> - Não existe valor maior, os dois são iguais
                     </p>
-                <p>Primeiro valor: <input type="number" name="p1" id="p1"></p>
-                <p>Segundo valor: <input type="number" name="p2" id="p2"> <input id="bot" type="button" value="COMPARAR" onclick="ex026()"></p>
+                <p><label for="p1">Primeiro valor:</label> <input type="number" name="p1" id="p1"></p>
+                <p><label for="p2">Segundo valor:</label> <input type="number" name="p2" id="p2"> <input id="bot" type="button" value="COMPARAR" onclick="ex026()"></p>
             </div>
             <div id="res_vinte_seis"></div>
         </section>
@@ -91,8 +91,8 @@
                     <br> - Média até 4.9: REPROVADO
                     <br> - Média entre 5.0 e 6.9: RECUPERAÇÃO
                     <br> - Média 7.0 ou superior: APROVADO</p>
-                <p>Primeira Nota: <input type="number" name="v1" id="v1"></p>
-                <p>Segunda Nota: <input type="number" name="v2" id="v2"> <input type="button" value="CALCULAR MÉDIA" onclick="ex027()"></p>
+                <p><label for="v1">Primeira Nota:</label> <input type="number" name="v1" id="v1"></p>
+                <p><label for="v2">Segunda Nota:</label> <input type="number" name="v2" id="v2"> <input type="button" value="CALCULAR MÉDIA" onclick="ex027()"></p>
             <div id="res_vinte_sete"></div>
         </section>
         <section>
@@ -102,9 +102,9 @@
                     <br> - Abaixo de 100m² = TERRENO POPULAR
                     <br> - Entre 100m² e 500m² = TERRENO MASTER
                     <br> - Acima de 500m² = TERRENO VIP</p>
-                Digite a largura da área do terreno: 
+                <p><label for="largura">Digite a largura da área do terreno:</label></p> 
                 <p><input type="number" name="largura" id="largura"></p>
-                <p>Digite o comprimento da área do terreno:</p>
+                <p><label for="comprimento">Digite o comprimento da área do terreno:</label></p>
                 <p><input type="number" name="comprimento" id="comprimento"> <input type="button" value="CALCULAR" onclick="ex028()"></p>
             </div>
             <div id="res_vinte_oito"></div>
@@ -116,10 +116,12 @@
                     <br> - Até 3 anos de empresa: aumento de 3%
                     <br> - entre 3 e 10 anos: aumento de 12.5%
                     <br> - 10 anos ou mais: aumento de 20%</p>
-                <p>Nome: <input type="text" name="name" id="name"></p> 
-                <p>Salário: <input type="number" name="salarioex29" id="salarioex29"></p>
-                <p>Anos trabalhados: <input type="number" name="tt" id="tt"></p>
-                <p><input type="button" value="CALCULAR" onclick="ex029()"></p>
+                <p><label for="name">Nome:</label></p> 
+                <p><input type="text" name="name" id="name"></p>
+                <p><label for="salarioex29">Salário:</label></p>
+                <p><input type="number" name="salarioex29" id="salarioex29"></p>
+                <p><label for="tt">Anos trabalhados:</label></p>
+                <p><input type="number" name="tt" id="tt"> <input type="button" value="CALCULAR" onclick="ex029()"></p>
             </div>
             <div id="res_vinte_nove"></div>
         </section>

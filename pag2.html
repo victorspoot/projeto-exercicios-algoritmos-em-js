@@ -17,9 +17,9 @@
             <div>
                 <h1>Exercício 011</h1>
                 <p>11) Desenvolva uma lógica que leia os valores de A, B e C de uma equação do segundo grau e mostre o valor de Delta.</p>
-                <p>A = <input type="number" name="a" id="a"></p>
-                <p>B = <input type="number" name="b" id="b"></p> 
-                <p>C = <input type="number" name="c" id="c"> <input type="button" value="VALOR DE DELTA" onclick="ex011()"></p>
+                <p><label for="a">A =</label> <input type="number" name="a" id="a"></p>
+                <p><label for="b">B =</label> <input type="number" name="b" id="b"></p> 
+                <p><label for="c">C =</label> <input type="number" name="c" id="c"> <input type="button" value="VALOR DE DELTA" onclick="ex011()"></p>
             </div>
             <div id="res_onze"></div>
         </section>
@@ -27,8 +27,8 @@
             <div>
                 <h1>Exercício 012</h1>
                 <P>12) Crie um programa que leia o preço de um produto, calcule e mostre o seu PREÇO PROMOCIONAL, com 5% de desconto.</P>
-                <p>Valor do produto <input type="number" name="valor" id="valor"></p> 
-                <p>Digite o desconto <input type="number" name="desc" id="desc"> <input type="button" value="DESCONTAR" onclick="ex012()"></p>
+                <p><label for="valor">Valor do produto:</label> <input type="number" name="valor" id="valor"></p> 
+                <p><label for="desc">Digite o desconto:</label> <input type="number" name="desc" id="desc"> <input type="button" value="DESCONTAR" onclick="ex012()"></p>
             </div>
              <div id="res_doze"></div>
         </section>
@@ -36,9 +36,9 @@
             <div>
                 <h1>Exercício 013</h1>
                 <p>13) Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o seu novo salário, com 15% de aumento.</p>
-                <p>Digite seu salário atual:</p>
+                <p><label for="salario">Digite seu salário atual:</label></p>
                 <p><input type="number" name="salario" id="salario"></p>
-                <p>Digite a porcentagem do aumento:</p>
+                <p><label for="porcentagem">Digite a porcentagem do aumento:</label></p>
                 <p><input type="number" name="porcentagem" id="porcentagem"> <input type="button" value="AUMENTO" onclick="ex013()"></p>
             </div>
             <div id="res_treze"></div>
@@ -48,9 +48,9 @@
                 <h1>Execício 014</h1>
                 <p>14) A locadora de carros precisa da sua ajuda para cobrar seus serviços. Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço total a pagar,
                 sabendo que o carro custa R$90 por dia e R$0,20 por Km rodado.</p>
-                <p>Quantos km foram percorridos?</p>
+                <p><label for="kmp">Quantos km foram percorridos?</label></p>
                 <p><input type="number" name="kmp" id="kmp"></p>
-                <p>Quantos dias de locação?</p> 
+                <p><label for="dias">Quantos dias de locação?</label></p> 
                 <p><input type="number" name="dias" id="dias"> <input type="button" value="CALCULAR" onclick="ex014()"></p>
             </div>
             <div id="res_quatorze"></div>
@@ -59,7 +59,7 @@
             <div>
                 <h1>Exercício 015</h1>
                 <p>15) Crie um programa que leia o número de dias trabalhados em um mês e mostre o salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25 por hora trabalhada.</p>
-                <p>Dias trabalhados <input type="number" name="diast" id="diast"> <input type="button" value="CALCULAR" onclick="ex015()"></p>
+                <p><label for="diast">Dias trabalhados:</label> <input type="number" name="diast" id="diast"> <input type="button" value="CALCULAR" onclick="ex015()"></p>
             </div>
             <div id="res_quinze"></div>
         </section>
@@ -67,9 +67,9 @@
             <div>
                 <h1>Exercício 016</h1>
                 <p>16) [DESAFIO] Escreva um programa para calcular a redução do tempo de vida de um fumante. Pergunte a quantidade de cigarros fumados por dias e quantos anos ele já fumou. Considere que um fumante perde 10 min de vida a cada cigarro. Calcule quantos dias de vida um fumante perderá e exiba o total em dias.</p>
-                <p>Quantos cigarros você fuma por dia?</p> 
+                <p><label for="cig">Quantos cigarros você fuma por dia?</label></p> 
                 <p><input type="number" name="cig" id="cig"></p>
-                <p>Fuma a quantos anos?</p>
+                <p><label for="ano">Fuma a quantos anos?</label></p>
                 <p><input type="number" name="ano'" id="ano"> <input type="button" value="SUBTRAIR VIDA" onclick="ex016()"></p>
             </div>
             <div id="res_dezesseis">
@@ -80,7 +80,7 @@
             <div>
                 <h1>Execício 017</h1>
                 <p>17) Escreva um programa que pergunte a velocidade de um carro. Caso ultrapasse 80Km/h, exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.</p>
-                <p>Qual a velocidade do carro? <input type="number" name="vel" id="vel">km/h <input type="button" value="CALCULAR" onclick="ex017()"></p>
+                <p><label for="vel">Qual a velocidade do carro?</label> <input type="number" name="vel" id="vel"> km/h <input type="button" value="CALCULAR" onclick="ex017()"></p>
             </div>
             <div id="res_dezessete"></div>
         </section>
@@ -88,7 +88,7 @@
             <div>
                 <h1>Exercício 018</h1>
                 <p>18) Faça um programa que leia o ano de nascimento de uma pessoa, calcule a idade dela e depois mostre se ela pode ou não votar.</p>
-                <p>Digite o ano de nascimento <input type="number" name="nasc" id="nasc"> <input type="button" value="VERIFICAR" onclick="ex018()"></p>
+                <p><label for="nasc">Digite o ano de nascimento:</label> <input type="number" name="nasc" id="nasc"> <input type="button" value="VERIFICAR" onclick="ex018()"></p>
             </div>
             <div id="res_dezoito"></div>
         </section>
@@ -96,8 +96,8 @@
             <div>
                 <h1>Exercício 019</h1>
                 <p>19) Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua média e mostre na tela. No final, analise a média e mostre se o aluno teve ou não um bom aproveitamento (se ficou acima da média 7.0).</p>
-                <p>Digite a primeira nota <input type="text" name="nota1" id="nota1"> </br></p>
-                <p>Digite a segunda nota <input type="number" name="nota2" id="nota2"> <input id="bot" type="button" value="APROVEITAMENTO" onclick="ex019()"></p>
+                <p><label for="nota1">Digite a primeira nota:</label> <input type="text" name="nota1" id="nota1"> </br></p>
+                <p><label for="nota2">Digite a segunda nota:</label> <input type="number" name="nota2" id="nota2"> <input id="bot" type="button" value="APROVEITAMENTO" onclick="ex019()"></p>
             </div>
             <div id="res_dezenove"></div>
         </section>
@@ -105,7 +105,7 @@
             <div>
                 <h1>Execício 020</h1>
                 <p>20) Desenvolva um programa que leia um número inteiro e mostre se ele é PAR ou ÍMPAR.</p>
-                <p>Digite um numero inteiro <input type="number" name="numero" id="numero"> <input id="bot" type="button" value="CALCULAR" onclick="ex020()">
+                <p><label for="numero">Digite um numero inteiro:</label> <input type="number" name="numero" id="numero"> <input id="bot" type="button" value="CALCULAR" onclick="ex020()">
                 </p>
             </div>
             <div id="res_vinte"></div>
