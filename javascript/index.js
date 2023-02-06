@@ -1,3 +1,7 @@
+var res = document.getElementById('ola-mundo')
+var ola = String('Olá Mundo!')
+res.innerHTML = `${ola}`
+
 function ex002() {
     var n = document.getElementById('txtnome')
     var nome = n.value
