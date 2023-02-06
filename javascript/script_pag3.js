@@ -65,11 +65,11 @@ function ex025() {
     var reta1 = Number(r1.value)
     var reta2 = Number(r2.value)
     var reta3 = Number(r3.value)
-    if (reta1 >= reta2 + reta3) {
+    if (reta1 + reta2 == reta3) {
         res.innerHTML = `[ERRO] As medidas não podem formar um triângulo!`
-    } else if (reta2 >= reta1 + reta3) {
+    } else if (reta1 + reta3 == reta2) {
         res.innerHTML = `[ERRO] As medidas não podem formar um triângulo!`
-    } else if (reta3 >= reta1 + reta2) {
+    } else if (reta2 + reta3 == reta1) {
         res.innerHTML = `[ERRO] As medidas não podem formar um triângulo!`
     } else {
         res.innerHTML = `<strong>As medidas formam um triângulo!</strong>`
@@ -151,13 +151,17 @@ function ex030() {
     var lado1 = Number(l1.value)
     var lado2 = Number(l2.value)
     var lado3 = Number(l3.value)
-    if (lado1 >= lado2 + lado3) {
+    if (lado1 + lado2 == lado3) {
         res.innerHTML = `[ERRO] As medidas não podem formar um triângulo!`
-    } else if (lado2 >= lado1 + lado3) {
+    } else if (lado1 + lado3 == lado2) {
         res.innerHTML = `[ERRO] As medidas não podem formar um triângulo!`
-    } else if (lado3 >= lado1 + lado2) {
+    } else if (lado2 + lado3 == lado1) {
         res.innerHTML = `[ERRO] As medidas não podem formar um triângulo!`
     } else if (lado1 == lado2 && lado1 == lado3 && lado2 == lado3) {
-        res.innerHTML = `O triângulo é equilátero`
+        res.innerHTML = `O triângulo é <strong>EQUILÁTERO</strong>`
+    } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+        res.innerHTML = `O triângulo é <strong>ISÓSCELES</strong>`
+    } else if (lado1 != lado2 && lado1 != lado3 && lado2 != lado3) {
+        res.innerHTML = `O triângulo é <strong>ESCALENO</strong>`
     }
 }
