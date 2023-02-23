@@ -1,13 +1,9 @@
 function ex021() {
-    var bi = document.getElementById('bi')
-    var ano = Number(bi.value)
-    var bissexto = ano % 4
-    var res = document.getElementById('res_vinte_um')
-    if (bissexto == 0) {
-        res.innerHTML = `O ano de ${ano}  é BISSEXTO!`
-    } else {
-        res.innerHTML = `O ano de ${ano} não é BISSEXTO!`
-    }
+    const bi = document.getElementById('bi');
+    const ano = Number(bi.value);
+    const isBissexto = ano % 4 === 0;
+    const res = document.getElementById('res_vinte_um');
+    res.innerHTML = `O ano de ${ano} ${isBissexto ? 'é' : 'não é'} BISSEXTO!`;
 }
 
 function ex022() {
