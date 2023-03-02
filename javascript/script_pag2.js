@@ -88,8 +88,9 @@ function ex018() {
     var res = document.getElementById('res_dezoito')
     const nasc = document.getElementById('nasc')
     const dataAtual = new Date()
+    const anoAtual = dataAtual.getFullYear()
     const nascimento = nasc.value
-    let idade = dataAtual - nascimento
+    let idade = nascimento - anoAtual
     if (nascimento <= 0 || nascimento < 1900 || nascimento == dataAtual) {
         res.innerHTML = `[ERRO] Digite a data novamente`
     } else if (idade < 16) {
