@@ -90,8 +90,8 @@ function ex018() {
     const dataAtual = new Date()
     const anoAtual = dataAtual.getFullYear()
     const nascimento = nasc.value
-    let idade = nascimento - anoAtual
-    if (nascimento <= 0 || nascimento < 1900 || nascimento == dataAtual) {
+    let idade = anoAtual - nascimento
+    if (nascimento <= 0 || nascimento < 1905 || nascimento == anoAtual) {
         res.innerHTML = `[ERRO] Digite a data novamente`
     } else if (idade < 16) {
         res.innerHTML = `Você tem ${idade} anos, portanto você não pode votar`
