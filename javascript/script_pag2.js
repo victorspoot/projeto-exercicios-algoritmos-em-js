@@ -86,10 +86,12 @@ function ex017() {
 
 function ex018() {
     var res = document.getElementById('res_dezoito')
-    var nasc = document.getElementById('nasc')
-    var nascimento = nasc.value
-    var idade = 2022 - nascimento
-    if (nascimento <= 0 || nascimento < 1900 || nascimento == 2023) {
+    const nasc = document.getElementById('nasc')
+    const dataAtual = new Date()
+    const anoAtual = dataAtual.getFullYear()
+    const nascimento = nasc.value
+    let idade = anoAtual - nascimento
+    if (nascimento <= 0 || nascimento < 1900 || nascimento == dataAtual) {
         res.innerHTML = `[ERRO] Digite a data novamente`
     } else if (idade < 16) {
         res.innerHTML = `Você tem ${idade} anos, portanto você não pode votar`
