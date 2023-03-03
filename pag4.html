@@ -17,10 +17,34 @@
             <div>
                 <h1>Exercício 031</h1>
                 <p>
-                    31) [DESAFIO] Crie um jogo de JoKenPo (Pedra-Papel-Tesoura)
+                    31) [DESAFIO] Crie um jogo de JoKenPo (pedra-papel-tesoura)
+                </p>
+                
+                <p>
+                    <label for="jogadaJogador">Faça sua jogada:</label>
+                    <input type="text" name="jogadaJogador" id="jogadaJogador">
+                </p>
+                <p>
+                    <input type="button" value="JOGAR" onclick="ex031()">
                 </p>
                 <div>
-                    <input type="text" name="jogadaJogador" id="jogadaJogador">
+                    <p id="res_jogada_jogador"></p>
+                    <p id="res_ia"></p>
+                    <p id="res"></p><p><button onclick="location.reload()">Resetar</button></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>Exercício 032</h1>
+                <p>
+                    32) [DESAFIO] Crie um jogo onde o computador vai sortear um número entre 1 e 5 o
+                    jogador vai tentar descobrir qual foi o valor sorteado.
+                </p>
+                <p><input type="button" value="Sortear"></p>
+                <p>Digite um numero:</p>
+                <div>
+                    <p id="res_trinta-e-dois"></p>
                 </div>
             </div>
         </section>
@@ -35,6 +59,6 @@
             </p>
         </nav>
     </section>
-    <script src="script_pag4.js"></script>
+    <script src="javascript/script_pag4.js"></script>
 </body>
 </html>

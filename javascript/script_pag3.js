@@ -2,17 +2,17 @@ function ex021() {
     const bi = document.getElementById('bi');
     const ano = Number(bi.value);
     const isBissexto = ano % 4 === 0;
-    const res = document.getElementById('res_vinte_um');
+    let res = document.getElementById('res_vinte_um');
     res.innerHTML = `O ano de ${ano} ${isBissexto ? 'é' : 'não é'} BISSEXTO!`;
 }
 
 function ex022() {
-    var a = document.getElementById('ano')
-    var ano = Number(a.value)
+    let a = document.getElementById('ano')
+    let ano = Number(a.value)
     let idade = 2022 - ano
-    var anosfaltam = (18 - idade)
-    var anospassou = idade - 18
-    var res = document.getElementById('res_vinte_dois')
+    let anosfaltam = (18 - idade)
+    let anospassou = idade - 18
+    let res = document.getElementById('res_vinte_dois')
     if (ano === 0 || ano < 1910 || ano === 2023) {
         res.innerHTML = `[ERRO] Digite um ano de nascimento válido.`
     } else if (idade < 18) {
@@ -23,16 +23,16 @@ function ex022() {
 }
 
 function ex023() {
-    var sex = document.getElementsByName('radsex')
-    var n = document.getElementById('nome')
-    var res = document.getElementById('res_vinte_tres')
-    var v = document.getElementById('valor')
-    var nome = n.value
-    var valor = Number(v.value)
-    var desconto5 = 5 / 100
-    var desconto13 = 13 / 100
-    var descontof = (- valor * desconto13) + valor
-    var descontom = (- valor * desconto5) + valor
+    let sex = document.getElementsByName('radsex')
+    let n = document.getElementById('nome')
+    let res = document.getElementById('res_vinte_tres')
+    let v = document.getElementById('valor')
+    let nome = n.value
+    let valor = Number(v.value)
+    let desconto5 = 5 / 100
+    let desconto13 = 13 / 100
+    let descontof = (- valor * desconto13) + valor
+    let descontom = (- valor * desconto5) + valor
     if (sex[0].checked) {
         res.innerHTML = `Olá ${nome}, o valor do seu produto com 5% de desconto é de R$${descontom.toFixed(2).replace('.',',')} reais.`
     } else if (sex[1].checked) {
@@ -41,11 +41,11 @@ function ex023() {
 }
 
 function ex024() {
-    var res = document.getElementById('res_vinte_quatro')
-    var d = document.getElementById('dist')
-    var dist = Number(d.value) 
-    var pkm200 = 0.50 * dist
-    var pkm200mais = 0.45 * dist
+    let res = document.getElementById('res_vinte_quatro')
+    let d = document.getElementById('dist')
+    let dist = Number(d.value) 
+    let pkm200 = 0.50 * dist
+    let pkm200mais = 0.45 * dist
     if (dist <= 200) {
         res.innerHTML = `O valor da viajem sera de <strong>R$${pkm200.toFixed(2).replace('.',',')} reais</strong>.`
     } else {
@@ -54,13 +54,13 @@ function ex024() {
 }
 
 function ex025() {
-    var r1 = document.getElementById('reta1')
-    var r2 = document.getElementById('reta2')
-    var r3 = document.getElementById('reta3')
-    var res = document.getElementById('res_vinte_cinco')
-    var reta1 = Number(r1.value)
-    var reta2 = Number(r2.value)
-    var reta3 = Number(r3.value)
+    let r1 = document.getElementById('reta1')
+    let r2 = document.getElementById('reta2')
+    let r3 = document.getElementById('reta3')
+    let res = document.getElementById('res_vinte_cinco')
+    let reta1 = Number(r1.value)
+    let reta2 = Number(r2.value)
+    let reta3 = Number(r3.value)
     if (reta1 + reta2 == reta3) {
         res.innerHTML = `[ERRO] As medidas não podem formar um triângulo!`
     } else if (reta1 + reta3 == reta2) {
@@ -73,11 +73,11 @@ function ex025() {
 }
 
 function ex026() {
-    var p1 = document.getElementById("p1")
-    var p2 = document.getElementById('p2')
-    var res = document.getElementById('res_vinte_seis')
-    var valor1 = Number(p1.value)
-    var valor2 = Number(p2.value)
+    let p1 = document.getElementById("p1")
+    let p2 = document.getElementById('p2')
+    let res = document.getElementById('res_vinte_seis')
+    let valor1 = Number(p1.value)
+    let valor2 = Number(p2.value)
     if (valor1 == valor2) {
         res.innerHTML = `Não exite valor maior, os valores [<strong>${valor1}</strong>] e [<strong>${valor2}</strong> ] são iguais!`
     } else if (valor1 > valor2) {
@@ -141,12 +141,12 @@ function ex029() {
 
 function ex030() {
     let res = document.getElementById('res_trinta')
-    var l1 = document.getElementById('lado1')
-    var l2 = document.getElementById('lado2')
-    var l3 = document.getElementById('lado3')
-    var lado1 = Number(l1.value)
-    var lado2 = Number(l2.value)
-    var lado3 = Number(l3.value)
+    let l1 = document.getElementById('lado1')
+    let l2 = document.getElementById('lado2')
+    let l3 = document.getElementById('lado3')
+    let lado1 = Number(l1.value)
+    let lado2 = Number(l2.value)
+    let lado3 = Number(l3.value)
     if (lado1 + lado2 == lado3) {
         res.innerHTML = `[ERRO] As medidas não podem formar um triângulo!`
     } else if (lado1 + lado3 == lado2) {
@@ -161,3 +161,4 @@ function ex030() {
         res.innerHTML = `O triângulo é <strong>ESCALENO</strong>`
     }
 }
+

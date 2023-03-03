@@ -1,23 +1,23 @@
 function ex011() {
-    var res = document.getElementById('res_onze')
-    var a1 = document.getElementById('a')
-    var b1 = document.getElementById('b')
-    var c1 = document.getElementById('c')
-    var a = a1.value 
-    var b = b1.value 
-    var c = c1.value
-    var delta = (b ** 2) - (4 * a * c)
+    let res = document.getElementById('res_onze')
+    let a1 = document.getElementById('a')
+    let b1 = document.getElementById('b')
+    let c1 = document.getElementById('c')
+    let a = a1.value 
+    let b = b1.value 
+    let c = c1.value
+    let delta = (b ** 2) - (4 * a * c)
     res.innerHTML = `O valor de DELTA é <strong>${delta}</strong>`
 }
 
 function ex012() {
-    var valor = document.getElementById('valor')
-    var desc = document.getElementById('desc')
-    var v1 = Number(valor.value)
-    var d = Number(desc.value)
-    var desconto = (-v1 * d) / 100 
-    var tot = (desconto + v1)
-    var res = document.getElementById('res_doze')
+    let valor = document.getElementById('valor')
+    let desc = document.getElementById('desc')
+    let v1 = Number(valor.value)
+    let d = Number(desc.value)
+    let desconto = (-v1 * d) / 100 
+    let tot = (desconto + v1)
+    let res = document.getElementById('res_doze')
     res.innerHTML = `O valor do produto com desconto de <strong>${d}%</strong> é de <strong>R$${tot.toFixed(2).replace('.',',')} reais</strong>.`
 }
 
@@ -34,49 +34,49 @@ function ex013() {
 }
 
 function ex014() { 
-    var km = document.getElementById('kmp')
-    var kmp = km.value 
-    var dia = document.getElementById('dias')
-    var dias = dia.value 
-    var totalkm = kmp * 0.20
-    var totaldias = dias * 90
-    var total = totalkm + totaldias
-    var res = document.getElementById('res_quatorze')
+    let km = document.getElementById('kmp')
+    let kmp = km.value 
+    let dia = document.getElementById('dias')
+    let dias = dia.value 
+    let totalkm = kmp * 0.20
+    let totaldias = dias * 90
+    let total = totalkm + totaldias
+    let res = document.getElementById('res_quatorze')
     res.innerHTML = `O valor total de dias de locação é de <strong>R$${totaldias.toFixed(2).replace('.', ',')} reais</strong>.<br><br>`
     res.innerHTML += `O valor total de km percorridos é de <strong>R$${totalkm.toFixed(2).replace('.', ',')} reais</strong>.<br/><br>`
     res.innerHTML += `O valor total a ser pago é de <strong>R$${total.toFixed(2).replace('.', ',')} reais</strong>.`
 }
 
  function ex015() {
-    var diastrabalhados = document.getElementById('diast')
-    var dt = diastrabalhados.value 
-    var dias = 200
-    var salario = dt * dias
-    var res = document.getElementById('res_quinze')
+    let diastrabalhados = document.getElementById('diast')
+    let dt = diastrabalhados.value 
+    let dias = 200
+    let salario = dt * dias
+    let res = document.getElementById('res_quinze')
     res.innerHTML = `O funcionario trabalhou <strong>${dt} dias</strong>, portanto seu salario é de <strong>R$${salario.toFixed(2).replace('.', ',')} reais</strong>.`
 }
 
 function ex016() {
-    var cig = document.getElementById('cig')
-    var ano1 = document.getElementById('ano')
-    var cigarros = cig.value 
-    var anos = ano1.value
-    var dia = 1440
-    var ano = 365
-    var minutodevida = 10
-    var diasdevida = cigarros * minutodevida
-    var totano = anos * ano
-    var totvida = totano * diasdevida
-    var totvidadia = totvida / dia
-    var res = document.getElementById('res_dezesseis')
+    let cig = document.getElementById('cig')
+    let ano1 = document.getElementById('ano')
+    let cigarros = cig.value 
+    let anos = ano1.value
+    let dia = 1440
+    let ano = 365
+    let minutodevida = 10
+    let diasdevida = cigarros * minutodevida
+    let totano = anos * ano
+    let totvida = totano * diasdevida
+    let totvidadia = totvida / dia
+    let res = document.getElementById('res_dezesseis')
     res.innerHTML = `Fumando <strong>${cigarros} cigarros</strong> por dia durante <strong>${anos} anos</strong> você perdeu <strong>${totvidadia.toFixed(0)} dias do total da sua vida</strong> (<em>Supondo que sua expectativa de vida seja de 100 anos</em>).`
 }
 
 function ex017() {
-    var vel = document.getElementById('vel')
-    var velocidade = vel.value 
-    var res = document.getElementById('res_dezessete')
-    var multa = (velocidade - 80) * 5
+    let vel = document.getElementById('vel')
+    let velocidade = vel.value 
+    let res = document.getElementById('res_dezessete')
+    let multa = (velocidade - 80) * 5
     if (velocidade > 80) {
         res.innerHTML = `Você esta acima do limite de velocidade, você foi multado no valor de <strong>R$${multa.toFixed(2).replace('.',',')} reais.</strong>`
     } else {
@@ -85,7 +85,7 @@ function ex017() {
 }
 
 function ex018() {
-    var res = document.getElementById('res_dezoito')
+    let res = document.getElementById('res_dezoito')
     const nasc = document.getElementById('nasc')
     const dataAtual = new Date()
     const anoAtual = dataAtual.getFullYear()
@@ -105,12 +105,12 @@ function ex018() {
 }
 
 function ex019() {
-    var n1 = document.getElementById('nota1')
-    var n2 = document.getElementById('nota2')
-    var res = document.getElementById('res_dezenove')
-    var nota1 = Number(n1.value)
-    var nota2 = Number(n2.value)
-    var media = (nota1 + nota2)/2
+    let n1 = document.getElementById('nota1')
+    let n2 = document.getElementById('nota2')
+    let res = document.getElementById('res_dezenove')
+    let nota1 = Number(n1.value)
+    let nota2 = Number(n2.value)
+    let media = (nota1 + nota2)/2
     if (media < 7) {
     res.innerHTML = `A média do aluno é ${media.toFixed(1)}, o aluno não teve um bom aproveitamento (ABAIXO DA MÉDIA)`
     }  else if (media === 7) {
@@ -121,9 +121,9 @@ function ex019() {
 }
 
 function ex020() {
-    var numero = document.getElementById('numero')
-    var n = Number(numero.value)
-    var res = document.getElementById('res_vinte')
+    let numero = document.getElementById('numero')
+    let n = Number(numero.value)
+    let res = document.getElementById('res_vinte')
     if (n % 2 == 1) {
         res.innerHTML = `O numero ${n} é ÍMPAR!`
     } else {

@@ -1,6 +1,6 @@
-const res = document.getElementById("ola-mundo")
-const ola = "Olá Mundo!"
-res.textContent = ola
+let resOla = document.getElementById("ola-mundo")
+let ola = "Olá Mundo!"
+resOla.textContent = ola
 
 function ex002() {
   const nome = document.getElementById("txtnome").value
@@ -27,12 +27,12 @@ function ex004() {
 }
 
 function ex005() {
-  var res = document.querySelector("div#res_cinco")
-  var nv1 = document.getElementById("v1")
-  var nv2 = document.getElementById("v2")
-  var n1 = Number(nv1.value)
-  var n2 = Number(nv2.value)
-  var cal = (n1 + n2) / 2
+  let res = document.querySelector("div#res_cinco")
+  let nv1 = document.getElementById("v1")
+  let nv2 = document.getElementById("v2")
+  let n1 = Number(nv1.value)
+  let n2 = Number(nv2.value)
+  let cal = (n1 + n2) / 2
   res.innerHTML = `Primeira Nota: <strong>${n1}</strong></br>`
   res.innerHTML += `Segunda Nota: <strong>${n2}</strong></br>`
   res.innerHTML += `A média das notas é igual a <strong>${cal.toFixed(
@@ -41,34 +41,34 @@ function ex005() {
 }
 
 function ex006() {
-  var n1 = document.getElementById("nume")
-  var n = Number(n1.value)
-  var antecessor = n - 1
-  var sucessor = n + 1
-  var res = document.getElementById("res_seis")
+  let n1 = document.getElementById("nume")
+  let n = Number(n1.value)
+  let antecessor = n - 1
+  let sucessor = n + 1
+  let res = document.getElementById("res_seis")
   res.innerHTML = `O Antecessor de <strong>${n}</strong> é <strong>${antecessor}</strong> e o Sucessor de <strong>${n}</strong> é <strong>${sucessor}</strong>`
 }
 
 function ex007() {
-  var valor = document.getElementById("valor")
-  var res = document.getElementById("res_sete")
-  var v = valor.value
-  var dobro = v * 2
-  var terca = v / 3
+  let valor = document.getElementById("valor")
+  let res = document.getElementById("res_sete")
+  let v = valor.value
+  let dobro = v * 2
+  let terca = v / 3
   res.innerHTML = `O <strong>DOBRO</strong> de <strong>${v}</strong> é <strong>${dobro}</strong></br>`
   res.innerHTML += `A TERÇA PARTE de (${v}) é (${terca.toFixed(1)})`
 }
 
 function ex008() {
-  var m = document.getElementById("dist")
-  var res = document.getElementById("res_oito")
-  var metros = m.value
-  var km = metros / 1000
-  var hm = metros / 100
-  var dam = metros / 10
-  var dm = metros * 10
-  var cm = metros * 100
-  var mm = metros * 1000
+  let m = document.getElementById("dist")
+  let res = document.getElementById("res_oito")
+  let metros = m.value
+  let km = metros / 1000
+  let hm = metros / 100
+  let dam = metros / 10
+  let dm = metros * 10
+  let cm = metros * 100
+  let mm = metros * 1000
   res.innerHTML = `A distância de ${metros}m corresponde a:<br>`
   res.innerHTML += `${km}<strong>km</strong><br>`
   res.innerHTML += `${dm.toFixed(1)}<strong>dm</strong><br>`
@@ -79,23 +79,23 @@ function ex008() {
 }
 
 function ex009() {
-  var dinheiro = document.getElementById("din")
-  var real = dinheiro.value
-  var dolares = 3.45
-  var compra = real / dolares
-  var res = document.getElementById("res_nove")
+  let dinheiro = document.getElementById("din")
+  let real = dinheiro.value
+  let dolares = 3.45
+  let compra = real / dolares
+  let res = document.getElementById("res_nove")
   res.innerHTML = `Com <strong>R$${real} reais</strong> você poderá comprar <strong>US$${compra
     .toFixed(2)
     .replace(".", ",")} dolares</strong>`
 }
 
 function ex010() {
-  var largura = document.getElementById("largura")
-  var altura = document.getElementById("altura")
-  var l = largura.value
-  var a = altura.value
-  var area = a * l
-  var tinta = area / 4
-  var res = document.getElementById("res_dez")
+  let largura = document.getElementById("largura")
+  let altura = document.getElementById("altura")
+  let l = largura.value
+  let a = altura.value
+  let area = a * l
+  let tinta = area / 4
+  let res = document.getElementById("res_dez")
   res.innerHTML = `A quantidade de tinta necessária para o serviço é de <strong>${tinta} litros</strong>`
 }
