@@ -28,6 +28,32 @@ function ex031() {
     }
 }
 
+function ex032() {
+    const res = document.getElementById("res_sorteio")
+    const res2 = document.getElementById("res_trinta_e_dois")
+    const numeroDigitado = document.getElementById("numero").value
+    const sortear = (document.getElementById("sortear").onclick = function () {
+      res.innerHTML = `Numero Gerado [*${sortear}]`;
+    })
+
+    function sortearNumero() {
+        const numeroSorteado = Math.floor(Math.random() * 5) + 1;
+        return numeroSorteado;
+    }
+
+    
+
+    if (numeroDigitado != sortearNumero()) {
+        res2.innerHTML = `O numero sorteado foi ${sortearNumero()} e você digitou o número ${numeroDigitado} Errou!`
+    } else {
+        res2.innerHTML = `O numero sorteado foi ${sortearNumero()} e você digitou o número ${numeroDigitado} Acertou!`
+    }
+
+}
+
+
+
+
 
 
 
