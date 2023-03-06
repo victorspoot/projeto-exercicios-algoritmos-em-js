@@ -1,67 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo/style.css" />
     <title>Exercícios JavaScript</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Resolução Exercícios de Algorítmos</h1>
-        <h2>Exercícios Propostos por <a href="https://github.com/gustavoguanabara" target="_blank" rel="external"><em>Gustavo Guanabara</em></a></h2>
+      <h1>Resolução Exercícios de Algorítmos</h1>
+      <h2>
+        Exercícios Propostos por
+        <a
+          href="https://github.com/gustavoguanabara"
+          target="_blank"
+          rel="external"
+          ><em>Gustavo Guanabara</em></a
+        >
+      </h2>
     </header>
     <main>
-        <section>
-            <div>
-                <h1>Exercício 031</h1>
-                <p>
-                    31) [DESAFIO] Crie um jogo de JoKenPo (pedra-papel-tesoura)
-                </p>
-                
-                <p>
-                    <label for="jogadaJogador">Faça sua jogada:</label>
-                    <input type="text" name="jogadaJogador" id="jogadaJogador">
-                </p>
-                <p>
-                    <input type="button" value="JOGAR" onclick="ex031()">
-                </p>
-                <div>
-                    <p id="res_jogada_jogador"></p>
-                    <p id="res_ia"></p>
-                    <p id="res"></p><p><button onclick="location.reload()">Resetar</button></p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div>
-                <h1>Exercício 032</h1>
-                <p>
-                    32) [DESAFIO] Crie um jogo onde o computador vai sortear um número entre 1 e 5 o
-                    jogador vai tentar descobrir qual foi o valor sorteado.
-                </p>
-                <p>
-                    <input id="sortear" type="button" value="Sortear" onclick="sorteioex032()">
-                <p>
-                <p id="res_sorteio"></p>
-                <p>Digite um numero: <input type="number" name="numDigitado" id="numDigitado"> <input type="button" value="ADIVINHAR" onclick="ex032()"></p>
-                <div>
-                    <p id="res_trinta_e_dois"></p>
-                </div>
-            </div>
-        </section>
+      <section>
+        <div>
+          <h1>Exercício 031</h1>
+          <p>31) [DESAFIO] Crie um jogo de JoKenPo (pedra-papel-tesoura)</p>
+
+          <p>
+            <label for="jogadaJogador">Faça sua jogada:</label>
+            <input type="text" name="jogadaJogador" id="jogadaJogador" />
+          </p>
+          <p>
+            <input type="button" value="JOGAR" onclick="ex031()" />
+          </p>
+          <div>
+            <p id="res_jogada_jogador"></p>
+            <p id="res_ia"></p>
+            <p id="res"></p>
+            <p><button onclick="location.reload()">Resetar</button></p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h1>Exercício 032</h1>
+          <p>
+            32) [DESAFIO] Crie um jogo onde o computador vai sortear um número
+            entre 1 e 5 o jogador vai tentar descobrir qual foi o valor
+            sorteado.
+          </p>
+          <p>
+            <input
+              id="sortear"
+              type="button"
+              value="Sortear"
+              onclick="sorteioex032()"
+            />
+          </p>
+
+          <p></p>
+          <p id="res_sorteio"></p>
+          <p>
+            Digite um numero:
+            <input type="number" name="numDigitado" id="numDigitado" />
+            <input type="button" value="ADIVINHAR" onclick="ex032()" />
+          </p>
+          <div>
+            <p id="res_trinta_e_dois"></p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h1>Exercício 033</h1>
+          <p>
+            33) Escreva um programa para aprovar ou não o empréstimo bancário
+            para a compra de uma casa. O programa vai perguntar o valor da casa,
+            o salário do comprador e em quantos anos ele vai pagar. Calcule o
+            valor da prestação mensal, sabendo que ela não pode exceder 30% do
+            salário ou então o empréstimo será negado.
+          </p>
+          <p>
+            <label for="valorCasa"></label><input type="number" name="valorCasa" id="valorCasa" placeholder="Digite o valor da casa"></p>
+          <p>
+            <label for="salario"></label><input type="number" name="salario" id="salario" placeholder="Digite seu salário">
+        </p>
+        <p>
+            <label for="anosPagando"></label><input type="number" name="anosPagando" id="anosPagando" placeholder="Digite quantidade de anos">
+        </p>
+        <p><input type="button" value="CALCULAR" onclick="ex033()"></p>
+        <p id="res_trinta_e_tres"></p>
+        </div>
+      </section>
     </main>
     <section>
-        <nav>
-            <p>Páginas:
-                <a href="index.html" target="_self" rel="prev">1</a>
-                <a href="pag2.html" target="_self" rel="prev">2</a>
-                <a href="pag3.html" target="_self" rel="prev">3</a>
-                <a href="pag4.html" target="_self">4</a>
-            </p>
-        </nav>
+      <nav>
+        <p>
+          Páginas:
+          <a href="index.html" target="_self" rel="prev">1</a>
+          <a href="pag2.html" target="_self" rel="prev">2</a>
+          <a href="pag3.html" target="_self" rel="prev">3</a>
+          <a href="pag4.html" target="_self">4</a>
+        </p>
+      </nav>
     </section>
     <script src="javascript/script_pag4.js"></script>
-</body>
+  </body>
 </html>

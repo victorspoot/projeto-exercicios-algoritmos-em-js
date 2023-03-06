@@ -34,16 +34,25 @@ function ex031() {
   }
 }
 
-function ex032() {
-    let btnSorteio = false
-    let res = document.getElementById("res_sorteio")
-    const numSorteio = document.getElementById("sortear")
-    numSorteio.addEventListener("click", function () {
-        btnSorteio = true
-    })
-    if (btnSorteio) {
-        res.innerHTML = `Numero Sorteado [*]`
-    } else {
-        res.innerHTML = `[ERRO] Sorteie um número!`
-    }
+function ex033() {
+  const res = document.getElementById("res_trinta_e_tres")
+  const valorCasaElement = document.getElementById("valorCasa")
+  const salarioElement = document.getElementById("salario")
+  const anosPagandoElement = document.getElementById("anosPagando")
+  const valorCasa = Number(valorCasaElement.value)
+  let salario = Number(salarioElement.value)
+  let anosPagando = Number(anosPagandoElement.value)
+  let prestacaoMensal = valorCasa / (anosPagando * 12)
+
+  if (!valorCasa || !salario || !anosPagando) {
+    res.innerHTML = `[ERRO] Digite um número válido!`
+  } else if (-valorCasa || -salario || -anosPagando) {
+    res.innerHTML = `[ERRO] Digite um valor valido!`
+  } else if (prestacaoMensal > salario * 0.3) {
+    let porcentagemSalario = salario * 0.3
+    res.innerHTML = `Empréstimo negado, baseado no valor da casa de R$${valorCasa.toLocaleString("pt-BR", { minimumFractionDigits: 2 })} reais e na quantidade anos a ser pago que é de ${anosPagando} anos, o valor da prestação mensal ficará em R$${prestacaoMensal.toLocaleString("pt-BR", { minimumFractionDigits: 2 })} reais e portanto é maior que 30% do seu salário de R$${salario.toLocaleString("pt-BR", { minimumFractionDigits: 2 })} reais. Lembrando que 30% do seu salário é R$${porcentagemSalario.toLocaleString("pt-BR", { minimumFractionDigits: 2 })} reais.`
+  } else {
+    res.innerHTML = `Emprestimo Liberado a prestação mensal baseada no seu salário de R$${salario.toLocaleString("pt-BR", { minimumFractionDigits: 2 }
+    )} reais será de R$${prestacaoMensal.toLocaleString("pt-BR", { minimumFractionDigits: 2, })} reais.`
+  }
 }
