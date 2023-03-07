@@ -73,7 +73,7 @@ function ex033() {
 
   if (!valorCasa || !salario || !anosPagando) {
     res.innerHTML = `[ERRO] Digite um número válido!`
-  } else if (-valorCasa || -salario || -anosPagando) {
+  } else if (valorCasa < 0 || salario < 0 || anosPagando < 0) {
     res.innerHTML = `[ERRO] Digite um valor valido!`
   } else if (prestacaoMensal > salario * 0.3) {
     let porcentagemSalario = salario * 0.3
@@ -83,3 +83,5 @@ function ex033() {
     )} reais será de R$${prestacaoMensal.toLocaleString("pt-BR", { minimumFractionDigits: 2, })} reais.`
   }
 }
+
+
