@@ -84,4 +84,104 @@ function ex033() {
   }
 }
 
+function ex034() {
+  const pesoImc = document.getElementById("peso")
+  const alturaImc = document.getElementById("altura")
+  const peso = Number(pesoImc.value)
+  const altura = Number(alturaImc.value)
+  const imc = peso / (altura * 2)
+  const res = document.getElementById("res_trinta_e_quatro")
+
+  if (peso === 0 || peso < 0) {
+    res.innerHTML = `[ERRO] Digite um peso válido!`
+  } else if (altura === 0 || altura < 0) {
+    res.innerHTML = `[ERRO] Digite uma altura válida!`
+  } else if (imc < 18.5) {
+    res.innerHTML = `IMC - ${imc.toFixed(1)} Abaixo do peso!`
+  } else if (imc > 18.5 && imc <= 25) {
+    res.innerHTML = `IMC - ${imc.toFixed(1)} Peso ideal!`
+  } else if (imc > 25 && imc <= 30) {
+    res.innerHTML = `IMC - ${imc.toFixed(1)} Sobrepeso!`
+  } else if (imc > 30 && imc <= 40) {
+    res.innerHTML = `IMC - ${imc.toFixed(1)} Obesidade!`
+  } else {
+    res.innerHTML = `IMC - ${imc.toFixed(1)} Obesidade mórbida!`
+  }
+}
+
+function ex035() {
+  const res = document.getElementById('res_trinta_e_cinco')
+  const tipoCarro =  document.getElementsByName('tipoCarro')
+  const diaAluguel = document.getElementById('diaAluguel')
+  const km = document.getElementById('km')
+  const diasLocacao = Number(diaAluguel.value)
+  const kilometrosPercorrido =Number(km.value)
+  const aluguelCarroPopular = 90
+  const aluguelCarroLuxo = 150
+  
+
+  if (tipoCarro[0].checked === false && tipoCarro[1].checked === false) {
+    res.innerHTML = `[ERRO] Escolha uma das opções de carro!`
+  } else if (tipoCarro[0].checked  && kilometrosPercorrido <= 100) {
+    const aluguelPorDia = aluguelCarroPopular * diasLocacao 
+    const kmPercorrido = kilometrosPercorrido * 0.20
+    const total = aluguelPorDia + kmPercorrido
+    res.innerHTML = `Dias de locação carro popular: ${diasLocacao} dia Valor: R$${aluguelPorDia.toLocaleString("pt-BR", {  minimumFractionDigits: 2 })} reais.<br>`
+    res.innerHTML += `Km percorrido ${kilometrosPercorrido.toFixed(2
+    )}Km Valor: R$${kmPercorrido.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,})} reais.<br>`
+    res.innerHTML += `Valor total R$${total.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+    })} reais.`
+  } else {
+    const aluguelPorDia = aluguelCarroPopular * diasLocacao
+    const kmPercorrido = kilometrosPercorrido * 0.10
+    const total = aluguelPorDia + kmPercorrido
+    res.innerHTML = `Dias de locação carro popular: ${diasLocacao} dia Valor: R$${aluguelPorDia.toLocaleString("pt-BR", {  minimumFractionDigits: 2 }
+    )} reais.<br>`
+    res.innerHTML += `Km percorrido ${kilometrosPercorrido.toFixed(2
+    )}Km Valor: R$${kmPercorrido.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,})} reais.<br>`
+    res.innerHTML += `Valor total R$${total.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+    })} reais.`
+  } 
+
+  if (tipoCarro[0].checked === false && tipoCarro[1].checked === false) {
+  } else if (tipoCarro[1].checked && kilometrosPercorrido <= 200) {
+      aluguelPorDia = aluguelCarroLuxo * diasLocacao
+      kmPercorrido = kilometrosPercorrido * 0.3
+      total = aluguelPorDia + kmPercorrido
+      res.innerHTML = `Dias de locação carro de luxo: ${diasLocacao} dia Valor: R$${aluguelPorDia.toLocaleString(
+        "pt-BR",
+        { minimumFractionDigits: 2 }
+      )} reais.<br>`
+      res.innerHTML += `Km percorrido ${kilometrosPercorrido.toFixed(
+        2
+      )}Km Valor: R$${kmPercorrido.toLocaleString("pt-BR", {
+        minimumFractionDigits: 2,
+      })} reais.<br>`
+      res.innerHTML += `Valor total R$${total.toLocaleString("pt-BR", {
+        minimumFractionDigits: 2,
+      })} reais.`
+    } else {
+      aluguelPorDia = aluguelCarroLuxo * diasLocacao
+      kmPercorrido = kilometrosPercorrido * 0.25
+      total = aluguelPorDia + kmPercorrido
+      res.innerHTML = `Dias de locação carro de luxo: ${diasLocacao} dia Valor: R$${aluguelPorDia.toLocaleString(
+        "pt-BR",
+        { minimumFractionDigits: 2 }
+      )} reais.<br>`
+      res.innerHTML += `Km percorrido ${kilometrosPercorrido.toFixed(
+        2
+      )}Km Valor: R$${kmPercorrido.toLocaleString("pt-BR", {
+        minimumFractionDigits: 2,
+      })} reais.<br>`
+      res.innerHTML += `Valor total R$${total.toLocaleString("pt-BR", {
+        minimumFractionDigits: 2,
+      })} reais.`
+    }
+
+}
+
 

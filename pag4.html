@@ -96,6 +96,75 @@
         <p id="res_trinta_e_tres"></p>
         </div>
       </section>
+      <section>
+        <div>
+          <h1>Exercício 034</h1>
+          <p>
+            34) O Índice de Massa Corpórea (IMC) é um valor calculado baseado na altura e no
+            peso de uma pessoa. De acordo com o valor do IMC, podemos classificar o
+            indivíduo dentro de certas faixas.
+          </p>
+          <ul>
+            <li>abaixo de 18.5: Abaixo do peso</li>
+            <li>entre 18.5 e 25: Peso ideal</li>
+            <li>entre 25 e 30: Sobrepeso</li>
+            <li>entre 30 e 40: Obesidade</li>
+            <li>acima de 40: Obseidade mórbida</li>
+          </ul>
+          <div>
+            <p>
+              <input type="number" name="peso" id="peso" placeholder="Digite seu peso">Kg
+            </p>
+            <p><input type="number" name="altura" id="altura" placeholder="Digite sua altura">Metros</p>
+            <button onclick="ex034()">CALCULAR - IMC</button>
+          </div>
+          <div id="res_trinta_e_quatro"></div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h1>Exercício 035</h1> 
+          <p>
+            35) Uma empresa de aluguel de carros precisa cobrar pelos seus serviços. O
+            aluguel de um carro custa R$90 por dia para carro popular e R$150 por dia para
+            carro de luxo. Além disso, o cliente paga por Km percorrido. Faça um programa
+            que leia o tipo de carro alugado (popular ou luxo), quantos dias de aluguel e
+            quantos Km foram percorridos. No final mostre o preço a ser pago de acordo com a
+            lista a seguir:
+        </p>
+        <ol>
+          <li>Carros populares (aluguel de R$90 por dia)</li>
+          <ul>
+            <li>Até 100Km percorridos: R$0,20 por Km</li>
+            <li>Acima de 100Km percorridos: R$0,10 por Km</li>
+          </ul>
+          <li>Carros de luxo (aluguel de R$150 por dia)</li>
+          <ul>
+            <li>Até 200Km percorridos: R$0,30 por Km</li>
+            <li>Acima de 200Km percorridos: R$0,25 por Km</li>
+          </ul>
+        </ol> 
+        <br>
+        <div>
+          <p>Qual tipo de carro deseja alugar?</p>
+          <p>
+            <label for="carroPopular">Carro Popular</label> <input type="radio" name="tipoCarro" id="carroPopular">
+          </p>
+          <p>
+            <label for="carroLuxo">Carro de Luxo</label>
+            <input type="radio" name="tipoCarro" id="carroLuxo">
+          </p>
+          <p>
+            <input type="number" name="diaAluguel" id="diaAluguel" placeholder="Quantos dias alugado">
+          </p>
+          <p>
+            <input type="number" name="km" id="km" placeholder="Quantos km percorridos">
+          </p>
+          <button onclick="ex035()">CALCULAR</button>
+          <div id="res_trinta_e_cinco"></div>
+        </div>
+        </div>
+      </section>
     </main>
     <section>
       <nav>
