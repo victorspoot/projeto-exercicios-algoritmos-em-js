@@ -27,8 +27,8 @@
           <p>31) [DESAFIO] Crie um jogo de JoKenPo (pedra-papel-tesoura)</p>
 
           <p>
-            <label for="jogadaJogador">Faça sua jogada:</label>
-            <input type="text" name="jogadaJogador" id="jogadaJogador" />
+            <label for="jogadaJogador"></label>
+            <input type="text" name="jogadaJogador" id="jogadaJogador" placeholder="Faça sua jogada"/>
           </p>
           <p>
             <input type="button" value="JOGAR" onclick="ex031()" />
@@ -53,21 +53,25 @@
             <input
               id="sortear"
               type="button"
-              value="Sortear"
-              onclick="sorteioex032()"
+              value="SORTEAR NÚMERO" 
+              onclick="ex032()"
             />
+            <p id="res_sorteio"></p>
           </p>
-
-          <p></p>
-          <p id="res_sorteio"></p>
           <p>
-            Digite um numero:
-            <input type="number" name="numDigitado" id="numDigitado" />
-            <input type="button" value="ADIVINHAR" onclick="ex032()" />
+            <input 
+              placeholder="Digite um número"
+              type="number" 
+              name="numDigitado" 
+              id="numDigitado"
+            />
+            <button id="adivinhar">ADIVINHAR</button>
           </p>
           <div>
             <p id="res_trinta_e_dois"></p>
+            <P id="res_2"></P>
           </div>
+          <p><button onclick="location.reload()">RESETAR</button></p>
         </div>
       </section>
       <section>

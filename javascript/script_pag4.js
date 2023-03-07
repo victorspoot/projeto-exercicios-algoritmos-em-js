@@ -34,6 +34,33 @@ function ex031() {
   }
 }
 
+function ex032() {
+  const res = document.getElementById('res_sorteio');
+  const sortearNum = document.getElementById('sortear');
+  if (sortearNum) {
+    res.innerHTML = `Número sorteado [*]`;
+  } else {
+    res.innerHTML = `[ERRO] Sorteie um número!`;
+  }
+
+  const adivinhar = document.getElementById('adivinhar');
+  adivinhar.addEventListener("click", function sorteio() {
+    let resAdivinhar = document.getElementById("res_trinta_e_dois")
+    const numeroDigitado = document.getElementById("numDigitado")
+    let numDigitado = Number(numeroDigitado.value)
+
+    const numSorteio = Math.floor(Math.random() * 5) + 1
+
+    if (numDigitado === 0 || numDigitado < 0) {
+        resAdivinhar.innerHTML = `[ERRO] Digite um número de 1 à 5!`
+    } else if (numDigitado !== numSorteio) {
+        resAdivinhar.innerHTML = `Número sorteado [<strong>${numSorteio}</strong>] Número digitado [<strong>${numDigitado}</strong>] Você errou!` 
+    } else {
+        resAdivinhar.innerHTML = `Número sorteado [<strong>${numSorteio}</strong>] Número digitado [<strong>${numDigitado}</strong>] Você acertou!`
+    }
+  })
+}
+
 function ex033() {
   const res = document.getElementById("res_trinta_e_tres")
   const valorCasaElement = document.getElementById("valorCasa")
