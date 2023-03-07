@@ -134,37 +134,30 @@ function ex035() {
     res.innerHTML += `Valor total R$${total.toLocaleString("pt-BR", {
       minimumFractionDigits: 2,
     })} reais.`
-  } else {
-     aluguelPorDia = aluguelCarroPopular * diasLocacao
-     kmPercorrido = kilometrosPercorrido * 0.10
-     total = aluguelPorDia + kmPercorrido
-    res.innerHTML = `Dias de locação carro popular: ${diasLocacao} dia Valor: R$${aluguelPorDia.toLocaleString("pt-BR", {  minimumFractionDigits: 2 }
+  } else if (tipoCarro[0].checked && kilometrosPercorrido > 100) {
+    aluguelPorDia = aluguelCarroPopular * diasLocacao
+    kmPercorrido = kilometrosPercorrido * 0.1
+    total = aluguelPorDia + kmPercorrido
+    res.innerHTML = `Dias de locação carro popular: ${diasLocacao} Valor: R$${aluguelPorDia.toLocaleString(
+      "pt-BR",
+      { minimumFractionDigits: 2 }
     )} reais.<br>`
-    res.innerHTML += `Km percorrido ${kilometrosPercorrido.toFixed(2
+    res.innerHTML += `Km percorrido ${kilometrosPercorrido.toFixed(
+      2
     )}Km Valor: R$${kmPercorrido.toLocaleString("pt-BR", {
-      minimumFractionDigits: 2,})} reais.<br>`
+      minimumFractionDigits: 2,
+    })} reais.<br>`
     res.innerHTML += `Valor total R$${total.toLocaleString("pt-BR", {
       minimumFractionDigits: 2,
     })} reais.`
-  } 
-
-  if (tipoCarro[0].checked === false && tipoCarro[1].checked === false) {
   } else if (tipoCarro[1].checked && kilometrosPercorrido <= 200) {
       aluguelPorDia = aluguelCarroLuxo * diasLocacao
       kmPercorrido = kilometrosPercorrido * 0.3
       total = aluguelPorDia + kmPercorrido
-      res.innerHTML = `Dias de locação carro de luxo: ${diasLocacao} dia Valor: R$${aluguelPorDia.toLocaleString(
-        "pt-BR",
-        { minimumFractionDigits: 2 }
-      )} reais.<br>`
-      res.innerHTML += `Km percorrido ${kilometrosPercorrido.toFixed(
-        2
-      )}Km Valor: R$${kmPercorrido.toLocaleString("pt-BR", {
-        minimumFractionDigits: 2,
-      })} reais.<br>`
-      res.innerHTML += `Valor total R$${total.toLocaleString("pt-BR", {
-        minimumFractionDigits: 2,
-      })} reais.`
+      res.innerHTML = `Dias de locação carro de luxo: ${diasLocacao} Valor: R$${aluguelPorDia.toLocaleString("pt-BR", { minimumFractionDigits: 2 })} reais.<br>`
+      res.innerHTML += `Km percorrido ${kilometrosPercorrido.toFixed(2)}Km Valor: R$${kmPercorrido.toLocaleString("pt-BR", {
+        minimumFractionDigits: 2,})} reais.<br>`
+      res.innerHTML += `Valor total R$${total.toLocaleString("pt-BR", { minimumFractionDigits: 2,})} reais.`
     } else {
       aluguelPorDia = aluguelCarroLuxo * diasLocacao
       kmPercorrido = kilometrosPercorrido * 0.25
