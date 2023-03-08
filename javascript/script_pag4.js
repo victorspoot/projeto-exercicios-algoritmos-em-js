@@ -178,6 +178,39 @@ function ex035() {
 
 }
 
+function ex036() {
+  const res = document.getElementById("res_trinta_e_seis")
+  const horasAtividades = document.getElementById('horasAtividades')
+  const horasDeAtividades = Number(horasAtividades.value)
+
+  if (document.getElementById("horasAtividades").value.trim() === "") {
+    res.innerHTML = `[ERRO] Campo vazio! Digite algum valor.`
+  } else if (horasDeAtividades <= 0) {
+    res.innerHTML = `[ERRO] Digite um valor válido.`
+  } else if (horasDeAtividades <= 10) {
+    const pontos = horasDeAtividades * 2
+    const dinheiroGanhoPorPonto = pontos * 0.05
+    res.innerHTML = `Com ${horasDeAtividades} horas de atividade física por mês você acumulou ${pontos} pontos, e ganhou um total de R$${dinheiroGanhoPorPonto.toLocaleString(
+      "pt-BR",
+      { minimumFractionDigits: 2 }
+    )} reais.`
+  } else if (horasDeAtividades >= 10 && horasDeAtividades <= 20) {
+    pontos = horasDeAtividades * 5
+    dinheiroGanhoPorPonto = pontos * 0.05
+    res.innerHTML = `Com ${horasDeAtividades} horas de atividade física por mês você acumulou ${pontos} pontos, e ganhou um total de R$${dinheiroGanhoPorPonto.toLocaleString(
+      "pt-BR",
+      { minimumFractionDigits: 2 }
+    )} reais.`
+  } else {
+    pontos = horasDeAtividades * 10
+    dinheiroGanhoPorPonto = pontos * 0.05
+    res.innerHTML = `Com ${horasDeAtividades} horas de atividade física por mês você acumulou ${pontos} pontos, e ganhou um total de R$${dinheiroGanhoPorPonto.toLocaleString(
+      "pt-BR",
+      { minimumFractionDigits: 2 }
+    )} reais.`
+  }
+}
+
 
 
 
