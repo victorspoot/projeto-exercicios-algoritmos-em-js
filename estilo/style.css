@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root {
@@ -46,6 +47,10 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+h2 {
+    color: #B0DE1B;
 }
 
 main {
