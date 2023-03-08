@@ -111,7 +111,6 @@ function ex034() {
 
 function ex035() {
   const res = document.getElementById('res_trinta_e_cinco')
-  const resCarroLuxo = document.getElementById('res-carro-luxo')
   const tipoCarro =  document.getElementsByName('tipoCarro')
   const diaAluguel = document.getElementById('diaAluguel')
   const km = document.getElementById('km')
@@ -120,9 +119,10 @@ function ex035() {
   const aluguelCarroPopular = 90
   const aluguelCarroLuxo = 150
   
-
   if (tipoCarro[0].checked === false && tipoCarro[1].checked === false) {
     res.innerHTML = `[ERRO] Escolha uma das opções de carro!`
+  } else if (diasLocacao <= 0 || kilometrosPercorrido <= 0) {
+    res.innerHTML = `[ERRO] Dias de locação ou kilometragem inválida! Por favor digite um número válido.`
   } else if (tipoCarro[0].checked  && kilometrosPercorrido <= 100) {
     const aluguelPorDia = aluguelCarroPopular * diasLocacao 
     const kmPercorrido = kilometrosPercorrido * 0.20
