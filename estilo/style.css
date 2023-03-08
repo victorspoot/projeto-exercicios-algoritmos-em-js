@@ -99,17 +99,13 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 40px;
-    font-size: 11px;
+    padding: 10px 0;
     text-align: center;
     background-color: #114591;
 }
 
 footer a {
-    position: absolute;
-    bottom: 0;
     color: #DE5947;
     font-size: 14px;
     font-style: italic;
-    padding: 10px;
 }
