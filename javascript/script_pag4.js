@@ -211,6 +211,18 @@ function ex036() {
   }
 }
 
+/*function ex037() {
+  const salario = 100
+  const genero = "homem"
+  const anosTrabalhados = 2
+  let reajuste
+
+
+  if (genero === "homem" && anosTrabalhados < 20) {
+    const novoSalario = salario + aumento
+  } else if (anosTrabalhados >= 20 || anosTrabalhados <= 30)
+}*/
+
 
 
 
